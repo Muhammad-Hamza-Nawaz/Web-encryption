@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Based Text Encryption Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Encryption Tool</h1>
+
+        <label for="plainText">Enter Plain Text:</label>
+        <textarea id="plainText" rows="4" placeholder="Type your message here..."></textarea>
+        
+        <label for="algorithm">Select Method:</label>
+        <select id="algorithm">
+            <option value="">-- Select Method --</option>
+            <option value="Caesar">Caesar Cipher (Client-Side)</option>
+            <option value="aes-256-cbc">AES-256-CBC (Encryption/Decryption)</option>
+            <option value="sha256">SHA-256 (Hashing)</option>
+        </select>
+
+        <div id="secret-storage">
+            <h2>Secrets Storage (For Decryption)</h2>
+            <p>AES requires the Key and IV to decrypt the message. The server generates these for you.</p>
+            <label for="storedKey">Encryption Key (Hex):</label>
+            <input type="text" id="storedKey" readonly placeholder="Key will appear here after encryption">
+            
+            <label for="storedIV">IV (Hex):</label>
+            <input type="text" id="storedIV" readonly placeholder="IV will appear here after encryption">
+        </div>
+
+        <div class="button-group">
+            <button onclick="processAction('encrypt')" id="encryptBtn">Encrypt/Hash</button>
+            <button onclick="processAction('decrypt')" id="decryptBtn">Decrypt</button>
+        </div>
+        
+        <div id="error-message" class="error-message"></div>
+
+        <label for="cipherText">Ciphertext / Hashed Output / Decrypted Text:</label>
+        <textarea id="cipherText" rows="4" readonly placeholder="Result will appear here..."></textarea>
+        
+        <button id="copyButton" onclick="copyCiphertext()" style="display:none;">Copy Result</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
