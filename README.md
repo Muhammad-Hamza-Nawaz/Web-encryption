@@ -1,10 +1,3 @@
-Since you had an issue with the content being centered on GitHub, and that's just GitHub's default layout, I'll give you the **final, correct version of the detailed README**.
-
-Just copy the entire block below and paste it into your `README.md` file on GitHub, replacing the placeholders with your information.
-
------
-
-````markdown
 # Web-Based Text Encryption Tool 🔐
 
 This project delivers a functional, single-page web application for encrypting, hashing, and decrypting text. It was developed as an assignment and demonstrates proficiency in both client-side and server-side cryptographic implementation and secure key management.
