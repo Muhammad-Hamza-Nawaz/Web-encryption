@@ -5,7 +5,7 @@ This project delivers a functional, single-page web application for encrypting, 
 ## 🚀 Live Demo & Repository Link
 
 * **View Code:** [https://github.com/Muhammad-Hamza-Nawaz/web-encryption]
-* **Demo Video Link:** *(Paste the link to your unlisted YouTube/Google Drive video here)*
+* **Demo Video Link:** (https://www.loom.com/share/2469c7b513ce484ba78cf8cb26fe41ef?sid=2c275413-74a5-4971-9001-de725eaa15b4)
 
 ## ✨ Key Features & Assignment Status
 
